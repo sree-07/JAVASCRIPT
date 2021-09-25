@@ -1,0 +1,136 @@
+<html> 
+    <head>
+        <title>
+            calc
+        </title>
+        <style>
+            div{
+                width: 310px;
+                height: 400px;
+                background-color: aqua;
+                padding: 10px;
+                margin-left: 40%;
+                margin-top: 10%;
+                border: 2px solid rgb(0, 255, 106);
+                border-radius: 5px;
+
+            } 
+            input{
+             padding: 10px;
+             margin: 5px;
+            }
+            .btn{
+                background-color: gray;
+                padding: 10px;
+                margin-top: 12px;
+                margin-left: 6px;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 800;
+                font-size: x-large;
+                color: honeydew;
+                border: 2px solid gold;
+                border-radius: 5px;
+
+            }
+            #clr{
+                background-color: gray;
+                padding: 10px;
+                margin-top:13px;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 800;
+                font-size: x-large;
+                color: honeydew;
+                border: 2px solid gold;
+                border-radius: 5px;
+                
+
+            }
+            #ans{
+                height: 60px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 800;
+            
+            }
+        </style>
+        <script src="1.js"></script>
+    </head>
+    <body>
+        <div >
+            <input type="num" value="" size="28" id="ans">
+            <input type="button" value="c" id="clr" onclick="clearScreen()"><br>
+        <input type="button" value="1"  class="btn" onclick="display('1')">
+        <input type="button" value="2"  class="btn"   onclick="display('2')">
+        <input type="button" value="3"  class="btn"   onclick="display('3')">
+        <input type="button" value="+"  class="btn"   onclick="display('+')" >
+        <br>
+        <input type="button" value="4"  class="btn" onclick="display('4')">
+        <input type="button" value="5"  class="btn" onclick="display('5')">
+        <input type="button" value="6"  class="btn" onclick="display('6')">
+        <input type="button" value="-"  class="btn" onclick="display('-')" ><br>
+        <input type="button" value="7"  class="btn"  onclick="display('7')">
+        <input type="button" value="8"  class="btn" onclick="display('8')">
+        <input type="button" value="9"  class="btn" onclick="display('9')">
+        <input type="button" value="*"  class="btn" onclick="display('*')"><br>
+        <input type="button" value="."  class="btn" onclick="display('.')">
+        <input type="button" value="0"  class="btn" onclick="display('0')">
+        
+        <input type="button" value="/"  class="btn" onclick="display('/')">
+        <input type="button" value="="  class="btn" onclick = "calculate()" >
+
+    </div>
+     <script>
+         function display(value) 
+         {
+           document.getElementById("ans").value += value;
+          }
+          function clearScreen() 
+          {
+         document.getElementById("ans").value = "";
+          }
+          function calculate() {
+           var p = document.getElementById("ans").value;
+ var q = eval(p);
+ document.getElementById("ans").value = q;
+}
+//          document.getElementsByClassName("btn")[0].addEventListener("click",num1)
+// function num1()
+// {
+//     var n1=document.getElementsByClassName("btn")[0]="1"
+//     document.getElementById("ans").value+=n1
+// }
+// document.getElementsByClassName("btn")[1].addEventListener("click",num2)
+// function num2()
+// {
+//     var n1=document.getElementsByClassName("btn")[1]="2"
+//     document.getElementById("ans").value+=n1
+// }
+// document.getElementsByClassName("btn")[2].addEventListener("click",num3)
+// function num3()
+// {
+//     var n1=document.getElementsByClassName("btn")[2]="3"
+//     document.getElementById("ans").value+=n1
+// }
+// document.getElementsByClassName("btn")[3].addEventListener("click",num4)
+// function num4()
+// {
+//     var n1=document.getElementsByClassName("btn")[2]="+"
+//     document.getElementById("ans").value+=n1
+// }
+// document.getElementsByClassName("btn")[15].addEventListener("click",eual)
+// function eual()
+// {
+//     var n1=document.getElementsByClassName("btn")[0]
+//     var n1=document.getElementsByClassName("btn")[1]
+//     var result=parseInt(n1)+parseInt(n1)
+//     document.getElementById("ans").value=result
+// }
+
+     </script>
+    </body> 
+</html>
