@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            photo navigation 
+        </title>
+        <style>
+            body{
+                background-color: orange;
+            }
+            input{
+                width: 90px;
+                height: 40px;
+                font-size: large;
+                margin-top: 10px;
+                margin: 20px;
+                font-weight: bold;
+                border: none;
+                background-color: black;
+                color: whitesmoke;
+                
+            }
+            h1{
+                font-family: sans-serif;
+            }
+            img{
+                
+                width: 300px;
+                height: 400px;
+            }
+            #pre{
+                position: absolute;
+                top: 200px;
+                left: 125px;
+            }
+            #nxt{
+                position: absolute;
+                top: 200px;
+                left: 900px;
+            }
+        </style>
+    </head>
+    <body>
+      <CENter>  <h1>PHOTO NAVIGATION</h1>
+      <img src="rode1.jpeg" alt="" width="250" height="300" id="image"><br>
+      <input type="button" value="previous" id="pre" width="500px">
+      <input type="button" value="next" id="nxt"></CENter>
+      <script>
+          document.getElementById("pre").addEventListener("click",pre)
+          document.getElementById("nxt").addEventListener("click",nxt)
+
+        var gallary=["rode2.jpeg","rode3.jpeg","rode4.jpeg","rode5.jpeg","rode6.jpeg","rode7.jpeg","rode8.jpeg","rode9.jpeg","rode10.jpeg"];
+        var a=0;
+        function pre()
+        {
+            a--;
+            if(a==-1)
+            {
+                a=0;
+            }
+            var c=document.getElementById("image");
+            c.setAttribute("src",gallary[a]);
+        }
+        function nxt()
+        {
+            a++;
+            if(a==gallary.length)
+            {
+                a=gallary.length-1;
+            }
+            var c=document.getElementById("image");
+            c.setAttribute("src",gallary[a]);
+        }
+      </script>
+
+    </body>
+</html>
