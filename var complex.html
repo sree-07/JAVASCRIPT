@@ -1,0 +1,121 @@
+<script>
+ var college={
+    "college":[{"cname":"mrem","code":"UJ","branches":"cse,it,mech,ece,eee"},{"cname":"mrem1","code":"UJ1","branches":"cse,it,mech,ece,eee"},{"cname":"mrem2","code":"UJ2","branches":"cse,it,mech,ece,eee"}],
+      "student":[{"sname":"srikanth","sid":100,"branch":"cse"},{"sname":"aparna","sid":101,"branch":"ece"},{"sname":"sowmya","sid":103,"branch":"ece"}],
+
+      "faculty":[{"fname":"babu","fid":200,"branch":"cse"},{"fname":"ashok","fid":201,"branch":"ece"},{"fname":"sowmya","fid":202,"branch":"ece"}]
+    
+    
+ }
+
+
+
+ 
+
+ 
+//  document.write(college)
+        //  document.write("<h2 style='text-align:center'> college information</h2>") 
+
+        //  document.write("college name :",college.college[0].cname)
+        //  document.write("<br>")
+        //  document.write("college code :",college.college[0].code)
+        //  document.write("<br>")
+        //  document.write(" Avil branches:",college.college[0].branches)
+        //  document.write("<br>")
+        //  document.write("college name :",college.college[1].cname)
+        //  document.write("<br>")
+        //  document.write("college code :",college.college[1].code)
+        //  document.write("<br>")
+        //  document.write(" Avil branches:",college.college[1].branches)
+        //  document.write("<br>")
+        //  document.write("college name :",college.college[2].cname)
+        //  document.write("<br>")
+        //  document.write("college code :",college.college[2].code)
+        //  document.write("<br>")
+        //  document.write(" Avil branches:",college.college[2].branches)
+        //  document.write("<br>")
+        //  document.write("<hr>")
+
+        //  document.write("<h2 style='text-align:center'> student info</h2>")   
+        //  document.write("student name:",college.student[0].sname)
+        //  document.write("<br>")
+        //  document.write("student id:",college.student[0].sid)
+        //  document.write("<br>")
+        //  document.write("student branch:",college.student[0].branch)
+        //  document.write("<br>")
+        //  document.write("student name:",college.student[1].sname)
+        //  document.write("<br>")
+        //  document.write("student id:",college.student[1].sid)
+        //  document.write("<br>")
+        //  document.write("student branch:",college.student[1].branch)
+        //  document.write("<br>")
+        //  document.write("student name:",college.student[2].sname)
+        //  document.write("<br>")
+        //  document.write("student id:",college.student[2].sid)
+        //  document.write("<br>")
+        //  document.write("student branch:",college.student[2].branch)
+        //  document.write("<br>")
+        //  document.write("<hr>")
+
+
+        //  document.write("<h2 style='text-align:center'> faculty info</h2>")   
+        //  document.write("faculty name:",college.faculty[0].fname)
+        //  document.write("<br>")
+        //  document.write("faculty id:",college.faculty[0].fsid)
+        //  document.write("<br>")
+        //  document.write("faculty branch:",college.faculty[0].branch)
+        //  document.write("<br>")
+        //  document.write("faculty name:",college.faculty[1].fname)
+        //  document.write("<br>")
+        //  document.write("faculty id:",college.faculty[1].fsid)
+        //  document.write("<br>")
+        //  document.write("faculty branch:",college.faculty[1].branch)
+        //  document.write("<br>")
+        //  document.write("faculty name:",college.faculty[2].fname)
+        //  document.write("<br>")
+        //  document.write("faculty id:",college.faculty[2].fsid)
+        //  document.write("<br>")
+        //  document.write("faculty branch:",college.faculty[2].branch)
+        //  document.write("<br>")
+        //  document.write("<hr>")
+
+        document.write("<h2 style='text-align:center'> college information</h2>") 
+         for(var i=0;i<college.college.length;i++)
+         {
+          document.write("college name :",college.college[i].cname)
+         document.write("<br>")
+         document.write("college code :",college.college[i].code)
+         document.write("<br>")
+         document.write(" Avil branches:",college.college[i].branches)
+         document.write("<br>")
+         document.write("<hr>")
+           
+
+         }
+
+         document.write("<h2 style='text-align:center'> student info</h2>")  
+         for(var i=0;i<college.student.length;i++)
+         {
+         document.write("student name:",college.student[i].sname)
+         document.write("<br>")
+         document.write("student id:",college.student[i].sid)
+         document.write("<br>")
+         document.write("student branch:",college.student[i].branch)
+         document.write("<br>")
+         document.write("<hr>")
+         }
+
+         document.write("<h2 style='text-align:center'> faculty info</h2>") 
+         for(var i=0;i<college.faculty.length;i++)
+         {
+         document.write("faculty name:",college.faculty[i].fname)
+         document.write("<br>")
+         document.write("faculty id:",college.faculty[i].fsid)
+         document.write("<br>")
+         document.write("faculty branch:",college.faculty[i].branch)
+         document.write("<br>")
+         document.write("<hr>")
+         }
+
+
+</script>
